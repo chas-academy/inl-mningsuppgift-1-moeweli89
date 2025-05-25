@@ -7,7 +7,38 @@ int main()
     srand(1);
 
    
-    // Your code goes here
+ 
+    int kast[100];
+
+    int antal[6] = {0, 0, 0, 0, 0, 0};
+
+    int summa = 0;
+
+    for (int i = 0; i < 100; i++) {
+     
+        int kastat = (rand() % 6) + 1;
+
+        kast[i] = kastat;
+t
+        antal[kastat - 1]++;
+
+       
+        summa = summa + kastat;
+    }
+
+    for (int i = 0; i < 6; i++) {
+        printf("%d\n", antal[i]);
+    }
+
+ 
+    printf("%d\n", summa);
+
+   
+    float medel = summa / 100.0;
+    printf("%.1f\n", medel);
+
+   
+}
 
     return 0;
 }
