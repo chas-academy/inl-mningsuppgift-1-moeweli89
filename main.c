@@ -34,7 +34,7 @@ t
     printf("%d\n", summa);
 
    
-    float medel = summa / 100.0;
+    float medel =  summa / 100.0;
     printf("%.1f\n", medel);
 
    
